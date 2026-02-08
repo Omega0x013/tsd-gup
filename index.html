@@ -1,98 +1,318 @@
 <!DOCTYPE html>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<title>Gup Forms & One Steps</title>
+<style>
+  body {
+    max-width: 75ch;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header, footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  }
+  blockquote { /* GitHub style */
+    margin: 1em 0;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+  }
+  h2 {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eaecef;
+    margin-bottom: 0;
+  }
+  h3, ul {
+    margin: 0.25em;
+  }
+  
+  .fs, .bs, .hr, .cb {
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    color: white;
+  }
+
+  .fs { background-color: #648FFF; } /* Front Stance */
+  .bs { background-color: #DC267F; } /* Back Stance*/
+  .hr { background-color: #FE6100; } /* Horse Stance */
+  .cb { background-color: #FFB000;} /* Choon Be */
+
+  hr {
+    max-width: 20ch;
+    margin-left: 0;
+    margin-right: auto;
+  }
+</style>
 <!-- -->
 <header>
-  <h1>Gup Forms, Hands, Feet, and Self Defence</h1>
-  <fieldset class="row">
-    <small>Filter by belt</small>
-    <br>
-    <label class="button white">
-      <input type="checkbox" id="filterWhite">
-      <span class="checkable">White</span>
-    </label>
-    <label class="button orange">
-      <input type="checkbox" id="filterOrange">
-      <span class="checkable">Orange</span>
-    </label>
-    <label class="button green">
-      <input type="checkbox" id="filterGreen">
-      <span class="checkable">Green</span>
-    </label>
-    <label class="button brown">
-      <input type="checkbox" id="filterBrown">
-      <span class="checkable">Brown</span>
-    </label>
-    <label class="button red">
-      <input type="checkbox" id="filterRed">
-      <span class="checkable">Red</span>
-    </label>
-    <label class="button blue">
-      <input type="checkbox" id="filterBlue">
-      <span class="checkable">Blue</span>
-    </label>
-  </fieldset>
+  <h1>Gup Forms & One Steps</h1>
+  <small>for <a href="https://www.dbbai.co.uk/">DBBAI Tang Soo Do.</a></small>
 </header>
+<nav>
+ <p>My notes on the moves of and how to perform the forms and hand, feet, and self defence techniques I've needed to grade in Tang Soo Do.</p>
+ <p>The contents section lists everything you'll need for your grading, grouped by the grade you're going for, rather than the belt you're currently wearing.</p>
+ <blockquote><strong>Example:</strong> A green belt is grading to green tag and an orange tag is double grading to green tag. They would both find the forms and one steps they're looking for marked under 'Green Tag'.</blockquote>
+ 
+ <h2>Contents</h2>
+
+ <article>
+  <h3>Orange Belt</h3>
+  <ul>
+    <li><a href="#hak-won-il-boo">Hak Won Il Boo</a></li>
+    <li><a href="#hands-1-5">Hands 1-5</a></li>
+    <li><a href="#feet-1-5">Feet 1-5</a></li>
+    <li><a href="#self-defence-1-5">Self Defence 1-5</a></li>
+  </ul>
+ </article>
+
+ <article>
+  <h3>Orange Tag</h3>
+  <ul>
+    <li><a href="#hak-won-ee-boo">Hak Won Ee Boo</a></li>
+    <li><a href="#hak-won-sam-boo">Hak Won Sam Boo</a></li>
+    <li><a href="#hands-1-5">Hands 1-5</a></li>
+    <li><a href="#feet-1-5">Feet 1-5</a></li>
+    <li><a href="#self-defence-1-5">Self Defence 1-5</a></li>
+  </ul>
+ </article>
+
+</nav>
 <main>
-  <section id="forms">
+  <section>
     <h2>Forms</h2>
-    <article class="card">
-      <header class="white">
-        Hak Won Il Bu
-        <br>
-        <small>Basic Form 1</small>
-      </header>
-      <footer>
-
-      </footer>
+    <article id="forms-key">
+      <h3>Key</h3>
     </article>
-    <article class="card">
-      <header class="white">
-        Hak Won Ee Bu
-        <br>
-        <small>Basic Form 2</small>
-      </header>
-      <footer>
-
-      </footer>
+    <article id="hak-won-il-boo">
+      <h3>Hak Won Il Boo</h3>
+      In low blocks and punches, make sure your fist is at groin height.
+      <ol>
+        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Front Kick Center</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+      </ol>
     </article>
-    <article class="card">
-      <header class="orange">
-        Hak Won Sam Bu
-        <br>
-        <small>Basic Form 3</small>
-      </header>
-      <footer>
-
-      </footer>
+    <article id="hak-won-ee-boo">
+      <h3>Hak Won Ee Boo</h3>
+      In high blocks, make sure your arm is away from your head, with your forearm at a slope to divert incoming blows.
+      <ol>
+        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="fs">&leftarrow; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Side Kick Center</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Punch</li>
+      </ol>
     </article>
-    <article class="card">
-      <header class="orange">
-        Pyung Ahn Cho Dan
-        <br>
-        <small>...</small>
-      </header>
-      <footer>
-
-      </footer>
+    <article id="hak-won-sam-boo">
+      <h3>Hak Won Sam Boo</h3>
+      In back stance, make sure your back leg is bent too.
+      <ol>
+        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="bs">&leftarrow; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <hr>
+        <li><span class="bs">&looparrowright; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Guard</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <li><span class="bs">&uparrow; B</span> Round Kick Center</li>
+        <hr>
+        <li><span class="bs">&looparrowright; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+      </ol>
     </article>
-    <article class="card">
-      <header class="green">
-        Pyung Ahn Ee Dan
-        <br>
-        <small>...</small>
-      </header>
-      <footer>
-
-      </footer>
+    <article id="pyung-ahn-cho-dan">
+      <h3>Pyung Ahn Cho Dan</h3>
+      In the hammer fist, have your feet at a right angle to each other, heels just about touching.
+      <ol>
+        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block</li>
+        <li><span class="cb">&#x2516;&nbsp; S</span> Hammer Fist</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block - Twist - Inside-Outside Knife</li>
+        <li><span class="fs">&uparrow; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Block</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <hr>
+        <li><span class="bs">&looparrowright; B</span> Low Knife Strike</li>
+        <li><span class="bs">&UpperRightArrow;; B</span> Low Knife Strike</li>
+        <li><span class="bs">&LowerRightArrow;; B</span> Low Knife Strike</li>
+        <li><span class="bs">&UpperLeftArrow;; B</span> Low Knife Strike</li>
+      </ol>
+    </article>
+    <article id="pyung-ahn-ee-dan">
+      <h3>Pyung Ahn Ee Dan</h3>
+    </article>
+    <article id="pyung-ahn-sam-dan">
+      <h3>Pyung Ahn Sam Dan</h3>
+    </article>
+    <article id="pyung-ahn-sa-dan">
+      <h3>Pyung Ahn Sa Dan</h3>
+    </article>
+    <article id="bong-hyung-il-boo">
+      <h3>Bong Hyung Il Boo</h3>
+    </article>
+    <article id="pyung-ahn-oh-dan">
+      <h3>Pyung Ahn Oh Dan</h3>
+    </article>
+    <article id="bassai">
+      <h3>Bassai</h3>
+    </article>
+    <article id="bong-hyung-ee-boo">
+      <h3>Bong Hyung Ee Boo</h3>
+    </article>
+    <article id="naihanchi-cho-dan">
+      <h3>Naihanchi Cho Dan</h3>
     </article>
   </section>
-  <section id="hands"></section>
-  <section id="feet"></section>
-  <section id="self-defence"></section>
+
+  <section>
+    <h2>Hands</h2>
+    Your partner attacks; you must defend yourself using the hand technique. Make sure to Ki Hap on the final move.
+    <article id="hands-1-5">
+      <h3>Hands 1-5</h3>
+      <ol>
+        <li>
+          <strong>Elbow Strike</strong><br>
+          Attack: High Punch<br>
+           Defence:
+           <ol>
+            <li>Step left leg back into horseriding stance.</li>
+            <li>Outside-in block with right hand.</li>
+            <li>Supported right elbow strike to the solar plexus.</li>
+           </ol>
+        </li>
+        <li>
+          <strong>Reverse Elbow Strike</strong><br>
+          Attack: High Punch<br>
+           Defence:
+           <ol>
+            <li>Step left leg back into horseriding stance.</li>
+            <li>Outside-in block with right hand.</li>
+            <li>Supported right elbow strike to the solar plexus.</li>
+            <li>Twist your upper body to left elbow strike the solar plexus.</li>
+           </ol>
+        </li>
+      </ol>
+    </article>
+    <article id="hands-6-10">
+      <h3>Hands 6-10</h3>
+    </article>
+    <article id="hands-11-15">
+      <h3>Hands 11-15</h3>
+    </article>
+    <article id="hands-15-20">
+      <h3>Hands 15-20</h3>
+    </article>
+  </section>
+
+  <section>
+    <h2>Feet</h2>
+    Your partner attacks; you must defend yourself using the foot technique. Make sure to Ki Hap on the final move.
+    <article id="feet-1-5">
+      <h3>Feet 1-5</h3>
+    </article>
+    <article id="feet-6-10">
+      <h3>Feet 6-10</h3>
+    </article>
+    <article id="feet-11-15">
+      <h3>Feet 11-15</h3>
+    </article>
+    <article id="feet-15-20">
+      <h3>Feet 15-20</h3>
+    </article>
+  </section>
+
+  <section>
+    <h2>Self Defence</h2>
+    Your partner grabs you; you must then escape using the self defence technique.
+    <article id="self-defence-1-5">
+      <h3>Self Defence 1-5</h3>
+    </article>
+    <article id="self-defence-6-10">
+      <h3>Self Defence 6-10</h3>
+    </article>
+    <article id="self-defence-11-15">
+      <h3>Self Defence 11-15</h3>
+    </article>
+    <article id="self-defence-15-20">
+      <h3>Self Defence 15-20</h3>
+    </article>
+  </section>
 </main>
+<footer>
+  <small>Website by Xander Bielby.</small>
+</footer>
