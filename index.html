@@ -38,24 +38,29 @@
   h2 {
     padding-bottom: 0.3em;
     border-bottom: 1px solid #eaecef;
-    margin-bottom: 0;
   }
 
+  h2,
   h3,
+  h4 {
+    margin: 0.5em 0 0 0;
+  }
+
   ul {
-    margin: 0.25em;
+    margin: 0 0 0.5em 0;
   }
 
   .fs,
   .bs,
   .hr,
-  .cb,
-  .st {
+  .st,
+  .ns,
+  .ff {
     font-size: 0.75rem;
     font-weight: bold;
     padding: 2px 6px;
     border-radius: 4px;
-    margin-right: 8px;
+    margin-right: .3ch;
     color: white;
   }
 
@@ -63,26 +68,25 @@
     background-color: #648FFF;
   }
 
-  /* Front Stance */
   .bs {
     background-color: #DC267F;
   }
 
-  /* Back Stance*/
   .hr {
     background-color: #FE6100;
   }
 
-  /* Horse Stance */
-  .cb {
+  .st {
     background-color: #FFB000;
   }
 
-  .st {
-    background-color: #eee;
+  .ns {
+    background-color: #666;
   }
 
-  /* Choon Be */
+  .ff {
+    background-color: #785EF0;
+  }
 
   hr {
     max-width: 20ch;
@@ -127,13 +131,17 @@
   .blue {
     --belt-color: blue;
   }
+
+  nav li {
+    margin: 0.6em 0;
+  }
 </style>
 <!-- -->
 <header>
   <h1>Gup Forms & One Steps</h1>
   <small>for <a href="https://www.dbbai.co.uk/">DBBAI Tang Soo Do.</a></small>
 </header>
-<nav>
+<nav id="contents" aria-label="Table of Contents">
   <p>My notes on the moves of and how to perform the forms and hand, feet, and self defence techniques I've needed to
     grade in Tang Soo Do.</p>
   <p>The contents section lists everything you'll need for your grading, grouped by the grade you're going for, rather
@@ -186,18 +194,67 @@
     </ul>
   </article>
 
+  <article>
+    <h3><span class="belt brown"></span>Brown Belt</h3>
+    <ul>
+      <li><a href="#pyung-ahn-ee-dan">Pyung Ahn Ee Dan</a></li>
+      <li><a href="#pyung-ahn-cho-dan">Pyung Ahn Sam Dan</a></li>
+      <li><a href="#hands-11-15">Hands 11-15</a></li>
+      <li><a href="#feet-11-15">Feet 11-15</a></li>
+      <li><a href="#self-defence-11-15">Self Defence 11-15</a></li>
+    </ul>
+  </article>
+
 </nav>
 <main>
   <section>
     <h2>Forms</h2>
     <article id="forms-key">
       <h3>Key</h3>
+      Accompanying each move is two symbols: one for the direction you are stepping and one for the stance you end up
+      in.
+
+      <h4>Direction Symbols</h4>
+      <ul>
+        <li><span class="ns">&middot;</span> - Not Moving.</li>
+        <li><span class="ns">&#x2812;</span> - Both feet together.</li>
+        <li><span class="ns">&uparrow;</span> - Straight ahead.</li>
+        <li><span class="ns">&leftarrow;</span> - 90&deg; to the left.</li>
+        <li><span class="ns">&rightarrow;</span> - 90&deg; to the right.</li>
+        <li><span class="ns">&curvearrowleft;</span> - 180&deg; to the left.</li>
+        <li><span class="ns">&curvearrowright;</span> - 180&deg; to the right.</li>
+        <li><span class="ns">&UpperLeftArrow;</span> - 45&deg; to the left.</li>
+        <li><span class="ns">&UpperRightArrow;</span> - 45&deg; to the right.</li>
+        <li><span class="ns">&looparrowleft;</span> - 270&deg; to the left.</li>
+        <li><span class="ns">&looparrowright;</span> - 270&deg; to the right.</li>
+        <li><span class="ns">&LowerLeftArrow;</span> - 135&deg; to the left.</li>
+        <li><span class="ns">&LowerRightArrow;</span> - 135&deg; to the right.</li>
+      </ul>
+      These directions are relative to the direction you were facing in the previous move. Specifically, they are
+      relative to the direction of your chest at the end of the previous move.
+
+      <h4>Stance Symbols</h4>
+      <ul>
+        <li><span class="st">C</span> - Choon Be (Ready Stance).</li>
+        <li><span class="st">S</span> - Standing.</li>
+        <li><span class="fs">F</span> - Front Stance.</li>
+        <li><span class="bs">B</span> - Back Stance.</li>
+        <li><span class="hr">H</span> - Horseriding Stance.</li>
+      </ul>
+      If you're not already familiar with the stances, then this resource will be difficult to parse. I strongly
+      recommend speaking to your instructor about them.
+
+      <h4>Horizontal Lines</h4>
+      <hr>
+      The horizontal lines indicate a place where you should Ki Hap. They often represent natural breaks in the form,
+      and may be useful for teaching forms in stages.
     </article>
+
     <article id="hak-won-il-bu">
       <h3>Hak Won Il Bu</h3>
       In low blocks and punches, make sure your fist is at groin height.
       <ol>
-        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
         <li><span class="fs">&leftarrow; F</span> Low Block</li>
         <li><span class="fs">&uparrow; F</span> Low Punch</li>
         <li><span class="fs">&curvearrowright; F</span> Low Block</li>
@@ -220,13 +277,15 @@
         <li><span class="fs">&uparrow; F</span> Low Punch</li>
         <li><span class="fs">&curvearrowright; F</span> Low Block</li>
         <li><span class="fs">&uparrow; F</span> Low Punch</li>
+        <hr>
       </ol>
     </article>
+
     <article id="hak-won-ee-bu">
       <h3>Hak Won Ee Bu</h3>
       In high blocks, make sure your arm is away from your head, with your forearm at a slope to divert incoming blows.
       <ol>
-        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
         <li><span class="fs">&leftarrow; F</span> High Block</li>
         <li><span class="fs">&uparrow; F</span> High Punch</li>
         <li><span class="fs">&curvearrowright; F</span> High Block</li>
@@ -249,13 +308,15 @@
         <li><span class="fs">&uparrow; F</span> High Punch</li>
         <li><span class="fs">&curvearrowright; F</span> High Block</li>
         <li><span class="fs">&uparrow; F</span> High Punch</li>
+        <hr>
       </ol>
     </article>
+
     <article id="hak-won-sam-bu">
       <h3>Hak Won Sam Bu</h3>
       In back stance, make sure your back leg is bent too.
       <ol>
-        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
         <li><span class="bs">&leftarrow; B</span> Inside-Outside Block</li>
         <li><span class="fs">&uparrow; F</span> Center Punch</li>
         <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
@@ -278,17 +339,20 @@
         <li><span class="fs">&uparrow; F</span> Center Punch</li>
         <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
         <li><span class="fs">&uparrow; F</span> Center Punch</li>
+        <hr>
       </ol>
     </article>
+
     <article id="pyung-ahn-cho-dan">
       <h3>Pyung Ahn Cho Dan</h3>
-      In the hammer fist, have your feet at a right angle to each other, heels just about touching.
+      <span class="ns">&#x2516;&nbsp;</span>- In the hammer fist, have your feet at a right angle to each other, heels
+      just about touching.
       <ol>
-        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
         <li><span class="fs">&leftarrow; F</span> Low Block</li>
         <li><span class="fs">&uparrow; F</span> Low Punch</li>
         <li><span class="fs">&curvearrowright; F</span> Low Block</li>
-        <li><span class="cb">&#x2516;&nbsp; S</span> Hammer Fist</li>
+        <li><span class="st">&#x2516;&nbsp; S</span> Hammer Fist</li>
         <li><span class="fs">&leftarrow; F</span> Low Block - Twist - Inside-Outside Knife</li>
         <li><span class="fs">&uparrow; F</span> High Block</li>
         <li><span class="fs">&uparrow; F</span> High Block</li>
@@ -307,11 +371,52 @@
         <li><span class="bs">&UpperRightArrow; B</span> Low Knife Strike</li>
         <li><span class="bs">&LowerRightArrow; B</span> Low Knife Strike</li>
         <li><span class="bs">&UpperLeftArrow; B</span> Low Knife Strike</li>
+        <hr>
       </ol>
     </article>
+
     <article id="pyung-ahn-ee-dan">
       <h3>Pyung Ahn Ee Dan</h3>
+      The Inside-Outside Block + Overhead Block in this form is special. You throw the two blocks simultaneously beside
+      and above your head so that your arms form the outline of a square. Your fists should be turned outwards, so that
+      your knuckles are facing the front.
+
+      In the Side Kick + Back Fist, make sure your arm and leg are parallel to each other, even if that means having
+      them both point toward the ground.
+      <ol>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
+        <li><span class="bs">&leftarrow; B</span> Inside-Outside Block + Overhead Block</li>
+        <li><span class="hr">&middot;&nbsp; H</span> Center Punch</li>
+        <li><span class="bs">&leftarrow; B</span> Inside-Outside Block + Overhead Block</li>
+        <li><span class="hr">&middot;&nbsp; H</span> Center Punch</li>
+        <li><span class="st">&rightarrow; S</span> Bring Feet Together + Couch Fists On Right</li>
+        <li><span class="st">&#x2812; S</span> Bring Right Foot Up + Couch Fists On Left</li>
+        <li><span class="st">&#x2812; S</span> Side Kick + Back Fist</li>
+        <hr>
+        <li><span class="bs">&leftarrow; B</span> Middle Knife Strike</li>
+        <li><span class="bs">&uparrow; B</span> Middle Knife Strike</li>
+        <li><span class="bs">&uparrow; B</span> Middle Knife Strike</li>
+        <li><span class="fs">&uparrow; F</span> Low Supported Spear Hand</li>
+        <hr>
+        <li><span class="bs">&looparrowright; B</span> Middle Knife Strike</li>
+        <li><span class="bs">&UpperRightArrow; B</span> Middle Knife Strike</li>
+        <li><span class="bs">&LowerRightArrow; B</span> Middle Knife Strike</li>
+        <li><span class="bs">&UpperLeftArrow; B</span> Middle Knife Strike</li>
+        <li><span class="fs">&UpperLeftArrow; F</span> Reverse Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Front Kick Center</li>
+        <li><span class="fs">&uparrow; F</span> Reverse Punch</li>
+        <li><span class="fs">&uparrow; F</span> Reverse Inside-Outside Block</li>
+        <li><span class="fs">&uparrow; F</span> Front Kick Center</li>
+        <li><span class="fs">&uparrow; F</span> Reverse Punch</li>
+        <li><span class="fs">&uparrow; F</span> Reinforced Block</li>
+        <li><span class="fs">&looparrowright; F</span> Low Block - Twist - Inside-Outside Knife</li>
+        <li><span class="fs">&UpperRightArrow; F</span> High Block</li>
+        <li><span class="fs">&LowerRightArrow; F</span> Low Block - Twist - Inside-Outside Knife</li>
+        <li><span class="fs">&UpperLeftArrow; F</span> High Block</li>
+        <hr>
+      </ol>
     </article>
+
     <article id="pyung-ahn-sam-dan">
       <h3>Pyung Ahn Sam Dan</h3>
       The Inside-Outside Block + Low Punch happen at the same time. To set up for it:
@@ -322,55 +427,136 @@
         <li>Bring your blocking fist across your body to your hip on the same side as your punching fist.</li>
         <li>Twist your upper body 45&deg; in the direction of your punching fist.</li>
       </ul>
-      Then, all you need to do is throw the block and punch simultaneously, bringing your upper body back to the center to generate power.
+      Then, all you need to do is throw the block and punch simultaneously, bringing your upper body back to the center
+      to generate power.
       <ol>
-        <li><span class="cb">&#x2812; C</span>Choon Be Jah Se</li>
+        <li><span class="st">&#x2812; C</span> Choon Be Jah Se</li>
         <li><span class="bs">&leftarrow; B</span> Inside-Outside Block</li>
-        <li><span class="cb">&#x2812; S</span>Right Inside-Outside Block + Left Low Punch</li>
-        <li><span class="cb">&#x2812; S</span>Left Inside-Outside Block + Right Low Punch</li>
+        <li><span class="st">&#x2812; S</span>Right Inside-Outside Block + Left Low Punch</li>
+        <li><span class="st">&#x2812; S</span>Left Inside-Outside Block + Right Low Punch</li>
         <li><span class="bs">&curvearrowright; B</span> Inside-Outside Block</li>
-        <li><span class="cb">&#x2812; S</span>Left Inside-Outside Block + Right Low Punch</li>
-        <li><span class="cb">&#x2812; S</span>Right Inside-Outside Block + Left Low Punch</li>
+        <li><span class="st">&#x2812; S</span>Left Inside-Outside Block + Right Low Punch</li>
+        <li><span class="st">&#x2812; S</span>Right Inside-Outside Block + Left Low Punch</li>
         <li><span class="fs">&leftarrow; F</span> Reinforced Block</li>
         <li><span class="fs">&uparrow; F</span> Low Supported Spear Hand</li>
         <li><span class="hr">&looparrowright; H</span> Back Fist</li>
         <li><span class="fs">&leftarrow; F</span> Center Punch</li>
         <hr>
-        <li><span class="cb">&curvearrowleft; S</span> Gather Ki; Hands On Hips</li>
+        <li><span class="st">&curvearrowleft; S</span> Gather Ki; Hands On Hips</li>
         <li><span class="hr">&leftarrow; H</span>Outside-Inside Kick</li>
         <li><span class="hr">&middot;&nbsp; H</span>Back Fist</li>
         <li><span class="hr">&curvearrowright; H</span>Outside-Inside Kick</li>
         <li><span class="hr">&middot;&nbsp; H</span>Back Fist</li>
         <li><span class="hr">&curvearrowleft; H</span>Outside-Inside Kick</li>
         <li><span class="hr">&middot;&nbsp; H</span>Back Fist</li>
+        <li><span class="fs">&leftarrow;&nbsp; F</span>Center Punch</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="hr">&middot;&nbsp; H</span> Sink Into Horseriding Stance</li>
+        <li><span class="hr">&curvearrowleft; H</span> Punch Over Shoulder</li>
+        <li><span class="hr">&middot;&nbsp; H</span> Standing Jump</li>
+        <li><span class="hr">&middot;&nbsp; H</span> Punch Over Shoulder</li>
+        <hr>
       </ol>
     </article>
-    <article id="pyung-ahn-sa-dan">
+
+    <!-- <article id="pyung-ahn-sa-dan">
       <h3>Pyung Ahn Sa Dan</h3>
-    </article>
+    </article> -->
+
     <article id="bong-hyung-il-bu">
       <h3>Bong Hyung Il Bu</h3>
+      In the final Front Kick, you bring your foot back down to its original position instead of stepping forward.
+      <ol>
+        <li><span class="st">&#x2812; C</span> Bong Hyung Choon Be</li>
+        <li><span class="fs">&uparrow; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Block - Twist - High Block</li>
+        <li><span class="fs">&middot;&nbsp; F</span> Overhead Block</li>
+        <li><span class="fs">&uparrow; F</span> Front Kick Center</li>
+        <hr>
+        <li><span class="fs">&middot;&nbsp; F</span> Low Block</li>
+        <li><span class="fs">&curvearrowleft; F</span> Low Block</li>
+        <li><span class="fs">&uparrow; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> Low Block - Twist - High Block</li>
+        <li><span class="fs">&middot;&nbsp; F</span> Overhead Block</li>
+        <li><span class="fs">&uparrow; F</span> Front Kick Center</li>
+        <hr>
+        <li><span class="fs">&middot;&nbsp; F</span> Low Block</li>
+        <li><span class="bs">&looparrowright; B</span> Low Block</li>
+        <li><span class="bs">&middot;&nbsp; B</span> Overhead Block</li>
+        <li><span class="bs">&curvearrowright; B</span> Low Block</li>
+        <li><span class="bs">&middot;&nbsp; B</span> Overhead Block</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block</li>
+        <li><span class="fs">&middot;&nbsp; F</span> Overhead Block</li>
+        <li><span class="fs">&middot;&nbsp; F</span> Front Kick Center</li>
+        <li><span class="fs">&middot;&nbsp; F</span> Reverse High Strike</li>
+        <li><span class="fs">&middot;&nbsp; F</span> High Strike</li>
+        <hr>
+      </ol>
     </article>
-    <article id="pyung-ahn-oh-dan">
+
+    <!-- <article id="pyung-ahn-oh-dan">
       <h3>Pyung Ahn Oh Dan</h3>
     </article>
+
     <article id="bassai">
       <h3>Bassai</h3>
-    </article>
+    </article> -->
+
     <article id="bong-hyung-ee-bu">
       <h3>Bong Hyung Ee Bu</h3>
+      <span class="ns">&circlearrowleft;</span> - A 360&deg; to the left. In this form, you
+      spring off your left foot and take two steps, ending in front stance with a high block.
+      <ol>
+        <li><span class="st">&#x2812; C</span> Bong Hyung Choon Be</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&uparrow; S</span> Bring Feet Together</li>
+        <li><span class="st">&middot;&nbsp; S</span> Step Out With Left Foot</li>
+        <li><span class="fs">&circlearrowleft; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Thrust</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <li><span class="fs">&leftarrow; F</span> Low Block</li>
+        <li><span class="hr">&leftarrow; H</span> Center Thrust</span></li>
+        <li><span class="fs">&looparrowright; F</span> High Block</li>
+        <li><span class="fs">&uparrow; F</span> High Thrust</li>
+        <hr>
+        <li><span class="fs">&looparrowright; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <li><span class="fs">&curvearrowright; F</span> Low Block - Twist - High Block</li>
+        <li><span class="st">&#x2812; S</span> Bring Feet Together</li>
+        <li><span class="fs">&uparrow; F</span> Reverse High Strike</li>
+        <hr>
+      </ol>
     </article>
-    <article id="naihanchi-cho-dan">
+
+    <!-- <article id="naihanchi-cho-dan">
       <h3>Naihanchi Cho Dan</h3>
-    </article>
+    </article> -->
+
   </section>
 
   <section>
     <h2>Hands</h2>
-    Your partner attacks; you must defend yourself using the hand technique. Make sure to Ki Hap on the final move.
+    You begin in the starting stance; your partner begins in a front stance low block. Your partner attacks; you must
+    defend yourself using the foot technique.
     <article id="hands-1-5">
       <h3>Hands 1-5</h3>
-      <ol>
+      Starting Stance: Choon Be Jah Se<br>
+      Attack: High Punch
+      <!-- <ol>
         <li>
           <strong>Elbow Strike</strong><br>
           Attack: High Punch<br>
@@ -392,33 +578,73 @@
             <li>Twist your upper body to left elbow strike the solar plexus.</li>
           </ol>
         </li>
-      </ol>
+      </ol> -->
     </article>
     <article id="hands-6-10">
       <h3>Hands 6-10</h3>
+      Starting Stance: Choon Be Jah Se<br>
+      Attack: High Punch
     </article>
     <article id="hands-11-15">
       <h3>Hands 11-15</h3>
+      Starting Stance: Choon Be Jah Se<br>
+      Attack: High Punch
     </article>
     <article id="hands-15-20">
       <h3>Hands 15-20</h3>
+      Starting Stance: Choon Be Jah Se<br>
+      Attack: High Punch
     </article>
   </section>
 
   <section>
     <h2>Feet</h2>
-    Your partner attacks; you must defend yourself using the foot technique. Make sure to Ki Hap on the final move.
+    You begin in the starting stance; your partner begins in a front stance low block. Your partner attacks; you must
+    defend yourself using the foot technique.
+
+    <blockquote>For foot techniques that involve a side kick, you may want to kick into the empty space underneath your partner's arm, past their ribs, to avoid injuring
+            them.</blockquote>
     <article id="feet-1-5">
       <h3>Feet 1-5</h3>
+      Starting Stance: Right Leg Back; Free Fighting Position<br>
+      Attack: High Punch
+      <ol>
+        <li>
+          <strong>Front Kick</strong> - <span class="ff">&middot;&nbsp; F</span> Perform a front kick to the center of
+          your partner's body.
+        </li>
+        <li>
+          <strong>Side Kick</strong> - <span class="ff">&middot;&nbsp; F</span> Perform a side kick to the center of
+          your partner's body.
+        </li>
+        <li>
+          <strong>Round Kick</strong> - <span class="ff">&middot;&nbsp; F</span> Perform a round kick your partner's
+          ribs.
+        </li>
+        <li>
+          <strong>Back Kick</strong> - <span class="ff">&middot;&nbsp; F</span> Perform a back kick to the center of
+          your partner's body.
+        </li>
+        <li>
+          <strong>Duck & Side Kick</strong> - <span class="hr">&UpperLeftArrow; H</span> duck your head and step out to
+          the left with your left foot, then perform a side kick to the center of your partner's body.
+        </li>
+      </ol>
     </article>
     <article id="feet-6-10">
       <h3>Feet 6-10</h3>
+      Starting Stance: Right Leg Back; Free Fighting Position<br>
+      Attack: High Punch
     </article>
     <article id="feet-11-15">
       <h3>Feet 11-15</h3>
+      Starting Stance: Right Leg Back; Free Fighting Position<br>
+      Attack: High Punch
     </article>
     <article id="feet-15-20">
       <h3>Feet 15-20</h3>
+      Starting Stance: Right Leg Back; Free Fighting Position<br>
+      Attack: Front Kick Center
     </article>
   </section>
 
